@@ -7,6 +7,7 @@ idle-timeout = 0
 completion-trigger-len = 1
 completion-timeout = 0
 completion-replace = true
+end-of-line-diagnostics = "hint"
 
 [editor.soft-wrap]
 wrap-indicator = ""
@@ -18,6 +19,10 @@ auto-signature-help = false
 [editor.statusline]
 left = []
 right = []
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+other-lines = "warning"
 
 [keys.normal]
 "A-j" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
