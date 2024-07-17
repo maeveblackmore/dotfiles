@@ -1,0 +1,35 @@
+theme = "catppuccin_latte"
+
+[editor]
+bufferline = "always"
+line-number = "relative"
+idle-timeout = 0
+completion-trigger-len = 1
+completion-timeout = 0
+completion-replace = true
+
+[editor.soft-wrap]
+wrap-indicator = ""
+enable = true
+
+[editor.lsp]
+auto-signature-help = false
+
+[editor.statusline]
+left = []
+right = []
+
+[keys.normal]
+"A-j" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+"A-k" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+
+[keys.normal.space]
+q = ":quit!"
+w = ":write"
+x = ":write-quit!"
+b = { c = ":buffer-close", f = "buffer_picker" }
